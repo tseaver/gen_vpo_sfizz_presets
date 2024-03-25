@@ -1,0 +1,27 @@
+[project]
+name = "gen_vpo_sfizz_presets"
+description = "Generate LV2 presets for sfizz from Virtual Playing Orchestra SFZ files"
+keywords = ["VPO", "sfizz", "LV2", "SFZ"]
+readme = "README.md"
+version = "0.1"
+authors = [
+  {name = "Tres Seaver", email = "tseaver@burgsongs.com"},
+]
+requires-python = ">= 3.8"
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Other Audience",
+  "Topic :: Multimedia :: Sound/Audio :: MIDI",
+  "License :: OSI Approved :: BSD License",
+  "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Repository = "https://github.com/tseaver/gen_vpo_sfizz_presets"
+
+[project.scripts]
+gen_vpo_sfizz_presets = "gen_vpo_sfizz_presets:main"
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
